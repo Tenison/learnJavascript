@@ -1,8 +1,8 @@
 # learnJavascript
 
-### Formatting VaLues
+### Formatting Values
 
-* int casting
+* Int casting
 
 ```javascript
     //Parsing 
@@ -25,7 +25,7 @@
     console.log(amount.toFixed(2)); // "215.98"
 ```
 
-* string casting
+* String casting
 
 ```javascript
     const value = 12345
@@ -45,7 +45,7 @@
     // String()
     String(value)
 ```
-
+##
 ### Simple Output
 
 ```javascript
@@ -53,13 +53,13 @@
 
     alert()
 ```
-
+##
 ### Simple Input
 
 ```javascript
     let age  = prompt("Pleae enter your age : ")
 ```
-
+##
 ### Accessing Object properties
 
 ```javascript
