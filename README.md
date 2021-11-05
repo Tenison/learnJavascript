@@ -119,8 +119,6 @@
 ##
 ### Functions
 
-__Function declarations load before any code is executed while Function expressions load only when the interpreter reaches that line of code.__
-
 * Function Declaration 
 
 ```javascript
@@ -138,12 +136,16 @@ __Function declarations load before any code is executed while Function expressi
     }
 ```
 
+__Function declarations vs Function expressions__
+__Function declarations load before any code is executed while Function expressions load only when the interpreter reaches that line of code.__
+
 * Arrow Function 
+
+__An Arrow Function Expression is a shorter syntax for writing function expressions__
 
 _Basic form_
 
 ```javascript
-    //An Arrow Function Expression is a shorter syntax for writing function expressions
     const greet = (who) => {
         return `Hello, ${who}!`
     }
