@@ -104,11 +104,18 @@
 ##
 ### conditions
 
-__if else__
+* if else statments
 
 ##
 ### Loops
 
-__while loop__
+__while loops__
 
 __do while loops__
+
+__for loops__
+
+
+##
+### Functions
+
