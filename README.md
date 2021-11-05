@@ -1,5 +1,30 @@
 # learnJavascript
 
+### Truthy and Falsy
+
+* The Following evaluates to False
+
+```javascript
+    let emptyString  = ""
+
+    //  empty strings evaluate to false
+    if(emptyString){
+        console.log("Not Empty")
+    }else{
+        console.log("Empty String")
+    }
+
+    let number  = 0
+
+    //Any number apart from zero (0) evaluates to true
+    if(number){
+        console.log("Number is True")
+    }else{
+        console.log("Number is Zero and evaluates to false")
+    }
+```
+
+##
 ### Formatting Values
 
 * Int casting
@@ -75,3 +100,15 @@
     console.log(obj["Age"])
     
 ```
+
+##
+### conditions
+
+__if else__
+
+##
+### Loops
+
+__while loop__
+
+__do while loops__
