@@ -172,7 +172,7 @@ __JavaScript is extremely broad-minded about the number of arguments you pass to
 
 
 
-
+##
 ## Node JS VS Vanilla JavaScript
 
 #### Vanilla JavaScript (FrontEnd) is used in the browser and helps a developer manipulate the DOM. JS libraries are bundled functions that help us write code easier. Example: jquery
