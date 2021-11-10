@@ -29,7 +29,7 @@
 
 * Int casting
 
-```javascript
+```javascriptgit 
     //Parsing 
     parseInt('32px')    //32
     parseInt('4')       //4
@@ -169,3 +169,38 @@ _Arrow function with default values_
     multiply();        // 6, calculation = 2*3*1
 ```
 __JavaScript is extremely broad-minded about the number of arguments you pass to a function. If you pass too many, the extra ones are ignored. If you pass too few, the missing parameters get assigned the value undefined__
+
+
+
+
+## Node JS VS Vanilla JavaScript
+
+#### Vanilla JavaScript (FrontEnd) is used in the browser and helps a developer manipulate the DOM. JS libraries are bundled functions that help us write code easier. Example: jquery
+
+#### Node JS (Backend) is a JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+
+### KEY FEATURES OF BOTH
+* __Single Thread__ JS uses only a single Thread to perform task, therefore performs one instruction after another. If an instruction is too big or takes a long time to complete causes JS to behave in a __blocking__ mannar. __Callback__ functions are used to solve JS's __blocking__ nature.
+* __Asynchronous__ JavaScript is a single-threaded programming language which means only one thing can happen at a time. ... That's where asynchronous JavaScript comes into play. Using asynchronous JavaScript (such as callbacks, promises, and async/await), you can perform long network requests without blocking the main thread.
+* __Non Blocking__ JS uses concepts like callbacks to make applications non blocking. Example: when you make an API call to a server in a program, JS passes the function to the event loop(Thread Pool) while performing other functions on the main call stack. This is done with the help of asynchronous JavaScript (such as callbacks, promises, and async/await). When the API call retruns, the results is placed on the event loop(Task Queue) until the main call stack is free. Then the results is run by the main call stack.
+
+_Callback Example_
+
+``` javascript
+    function doThisThing(theseArgs) {
+        setTimeout(function (theseArgs) { doThatOtherThing(theseArgs); }, 1000);
+        alert('hello world');
+    }
+```
+
+### Event Loop
+* __Vanilla JavaScript :__ Call Stack -> Web API's -> Task Queue
+* __Node JS :__ Call Stack/Event Queue -> C++ Thread Pool -> Task Queue
+
+### Where Node Shines 
+* __Event-Driven Apps__
+* __Data-Intensive (I/O)__
+* __Web Servers__  
+* __Rest API__ 
+
+
