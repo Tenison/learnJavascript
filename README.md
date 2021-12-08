@@ -221,7 +221,7 @@ _Callback Example_
   </tr>
     <tr>
     <td>Server Side Apps</td>
-    <td>Client Side JS (Frontend Apps)</td>
+    <td>Client Side JS (Frontend Apps)         </td>
   </tr>
     <tr>
     <td>Filesystem</td>
