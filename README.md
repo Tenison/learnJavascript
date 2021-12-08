@@ -232,3 +232,63 @@ _Callback Example_
     <td>ES6 Modules</td>
   </tr>
 </table>
+
+##
+
+* Node Export module using common.js
+* common.js was included natively in node.js. Therefore common.js comes as part of the node framework/runtime environment.
+
+__common.js helps us use features like require() to include modules, Example below :__
+
+_file1.js exports some functions and varibles to file2.js_
+_file1.js_
+
+```node
+    const timeOfDay = 'morning'
+
+    const greet = (name) => {
+        return `How are you doing, ${who}!`
+    }
+
+    //can export functions, const, let, var, etc.
+    module.exports = {
+        timeOfDay,
+        greet
+    }
+```
+_file2.js_
+
+```node
+    //using destruction here, but you can also use a const/variable and the dot notation to access the value exported
+    const {timeOfDay, greet} = require('./file1')
+
+    console.log(`Hey!, Good ${timeOfDay}`)
+    console.log(greet("Tenison"))
+```
+
+* OR
+
+_file1.js_
+
+```node
+    //To export a variable
+    exports.temp = "Hold any thing"
+
+    const timeOfDay = 'morning'
+
+    exports.greet = (name) => {
+        return `How are you doing, ${who}!`
+    }
+
+    //needed in order to export a constant
+    module.exports.timeOfDay = timeOfDay
+```
+_file2.js_
+
+```node
+    //using the const/variable and the dot notation to access the value exported
+    const holdImports = require('./file1')
+
+    console.log(`Hey!, Good ${holdImports.timeOfDay}`)
+    console.log(holdImports.greet("Tenison"))
+```
