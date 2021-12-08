@@ -235,10 +235,10 @@ _Callback Example_
 
 ##
 
-* Node Export module using common.js
-* common.js was included natively in node.js. Therefore common.js comes as part of the node framework/runtime environment.
+__Node Export module using common.js__
+* __common.js was included natively in node.js. Therefore common.js comes as part of the node framework/runtime environment.__
 
-__common.js helps us use features like require() to include modules, Example below :__
+* __common.js helps us use features like require() to include modules, Example below :__
 
 _file1.js exports some functions and varibles to file2.js_
 _file1.js_
