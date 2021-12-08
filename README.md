@@ -224,7 +224,7 @@ _Callback Example_
     <td>Client Side JS (Frontend Apps)   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
   </tr>
     <tr>
-    <td>Filesystem</td>
+    <td>Filesystem (fs)</td>
     <td>No Filesystem</td>
   </tr>
     <tr>
