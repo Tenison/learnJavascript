@@ -204,3 +204,25 @@ _Callback Example_
 * __Rest API__ 
 
 
+## Node JS VS Vanilla JavaScript
+
+<table>
+  <tr>
+    <th>Node</th>
+    <th>JavaScript</th>
+  </tr>
+  <tr>
+    <td>Gobal Variables (module, __direname, __filename)</td>
+    <td>Process</td>
+    <td>Server Side Apps</td>
+    <td>Filesystem</td>
+    <td>CommonJS</td>
+  </tr>
+  <tr>
+    <td>Window Object (window)</td>
+    <td>Domument Object (DOM)</td>
+    <td>Client Side JS (Frontend Apps)</td>
+    <td>No Filesystem</td>
+    <td>ES6 Modules</td>
+  </tr>
+</table>
