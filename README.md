@@ -213,16 +213,22 @@ _Callback Example_
   </tr>
   <tr>
     <td>Gobal Variables (module, __direname, __filename)</td>
-    <td>Process</td>
-    <td>Server Side Apps</td>
-    <td>Filesystem</td>
-    <td>CommonJS</td>
-  </tr>
-  <tr>
     <td>Window Object (window)</td>
+  </tr>
+    <tr>
+    <td>Process</td>
     <td>Domument Object (DOM)</td>
+  </tr>
+    <tr>
+    <td>Server Side Apps</td>
     <td>Client Side JS (Frontend Apps)</td>
+  </tr>
+    <tr>
+    <td>Filesystem</td>
     <td>No Filesystem</td>
+  </tr>
+    <tr>
+    <td>CommonJS</td>
     <td>ES6 Modules</td>
   </tr>
 </table>
