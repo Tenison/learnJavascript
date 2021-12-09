@@ -259,7 +259,7 @@ _file1.js_
 _file2.js_
 
 ```node
-    //using destruction here, but you can also use a const/variable and the dot notation to access the value exported
+    //using destruction here, but you can also use a const/variable and the dot notation to access the values exported
     const {timeOfDay, greet} = require('./file1')
 
     console.log(`Hey!, Good ${timeOfDay}`)
@@ -286,7 +286,7 @@ _file1.js_
 _file2.js_
 
 ```node
-    //using the const/variable and the dot notation to access the value exported
+    //using the const/variable and the dot notation to access the values exported
     const holdImports = require('./file1')
 
     console.log(`Hey!, Good ${holdImports.timeOfDay}`)
