@@ -25,6 +25,23 @@
 ```
 
 ##
+### Truthy and Falsy
+
+* `%`: The remainder operator is used to find the remainder of a division performed.
+
+  ```javascript
+  40 % 4; // => 0
+  -11 % 4; // => -3
+  ```
+
+* `**`: The exponentiation operator is used to raise a number to a power.
+
+  ```javascript
+  4 ** 3; // => 64
+  4 ** 1 / 2; // => 2
+  ```
+
+##
 ### Formatting Values
 
 * Int casting
