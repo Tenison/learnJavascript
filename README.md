@@ -232,12 +232,12 @@ _Callback Example_
     <th>JavaScript</th>
   </tr>
   <tr>
-    <td>Gobal Variables/Objects (module, __direname, __filename, require, setTimeout, setInterval)</td>
+    <td>Gobal Variables/Objects (setTimeout, setInterval, __direname, __filename, require, module)</td>
     <td>Window Objects (document, setTimeout, setInterval) (window)</td>
   </tr>
     <tr>
     <td>Process</td>
-    <td>Domument Object (DOM, querySelector, )</td>
+    <td>Document Object (DOM, querySelector, )</td>
   </tr>
     <tr>
     <td>Server Side Apps</td>
@@ -254,6 +254,46 @@ _Callback Example_
 </table>
 
 ##
+__Things to Know in NODE__
+
+##
+
+__Node Export module using common.js__
+* __Gobal Variables/Objects__
+
+* __Example :   setTimeout, setInterval, __direname, __filename, require, module.__
+
+* __direname provides absolute path for the directory name of the current module.
+* , __filename file name of the current module.
+
+```node
+console.log(__filename);
+// Prints: /Users/mjr/example.js
+console.log(__dirname);
+// Prints: /Users/mjr
+```
+
+_setTimeout_
+
+```node
+    //Say Hello after three seconds
+    function sayHi() {
+      alert('Hello');
+    }
+
+    setTimeout(sayHi, 3000);
+```
+_setInterval_
+
+```node
+    //shows the message every 2 seconds. After 5 seconds, the output is stopped
+
+    // repeat with the interval of 2 seconds
+    let timerId = setInterval(() => alert('tick'), 2000);
+
+    // after 5 seconds stop
+    setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+```
 
 __Node Export module using common.js__
 * __common.js was included natively in node.js. Therefore common.js comes as part of the node framework/runtime environment.__
