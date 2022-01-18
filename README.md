@@ -156,7 +156,7 @@
     }
 ```
 ##
-__Function declarations vs Function expressions__
+__Function declarations vs Function expressions__ :
 __Function declarations load before any code is executed (HOISTING) while Function expressions load only when the interpreter reaches that line of code.__
 
 _Hoisting refers to the availability of functions and variables “at the top” of your code_
