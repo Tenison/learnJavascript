@@ -232,7 +232,7 @@ _Callback Example_
     <th>JavaScript</th>
   </tr>
   <tr>
-    <td>Gobal Variables (module, __direname, __filename, require)</td>
+    <td>Gobal Variables / Objects (module, __direname, __filename, require)</td>
     <td>Window Object (window)</td>
   </tr>
     <tr>
