@@ -254,17 +254,16 @@ _Callback Example_
 </table>
 
 ##
-__Things to Know in NODE__
+__Things to Know about NODE__
 
 ##
 
-__Node Export module using common.js__
-* __Gobal Variables/Objects__
+__Gobal Variables/Objects__
 
-* __Example :   setTimeout, setInterval, __direname, __filename, require, module.__
+__Example : setTimeout, setInterval, __direname, __filename, require, module.__
 
-* __direname provides absolute path for the directory name of the current module.
-* , __filename file name of the current module.
+** __direname provides absolute path for the directory name of the current module.
+** __filename file name of the current module.
 
 ```node
 console.log(__filename);
