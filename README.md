@@ -25,7 +25,7 @@
 ```
 
 ##
-### Truthy and Falsy
+### Powers and Remainder
 
 * `%`: The remainder operator is used to find the remainder of a division performed.
 
