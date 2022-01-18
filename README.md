@@ -232,12 +232,12 @@ _Callback Example_
     <th>JavaScript</th>
   </tr>
   <tr>
-    <td>Gobal Variables / Objects (module, __direname, __filename, require)</td>
-    <td>Window Object (window)</td>
+    <td>Gobal Variables / Objects (module, __direname, __filename, require, setTimeout, setInterval)</td>
+    <td>Window Objects (document, setTimeout, setInterval) (window)</td>
   </tr>
     <tr>
     <td>Process</td>
-    <td>Domument Object (DOM)</td>
+    <td>Domument Object (DOM, querySelector, )</td>
   </tr>
     <tr>
     <td>Server Side Apps</td>
