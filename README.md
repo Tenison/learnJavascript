@@ -248,7 +248,7 @@ _Callback Example_
     <td>No Filesystem</td>
   </tr>
     <tr>
-    <td>Node Modules (os, path,)</td>
+    <td>Node Modules (os, path, filesystem)</td>
     <td>ES6 Modules</td>
   </tr>
 </table>
