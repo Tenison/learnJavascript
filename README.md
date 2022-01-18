@@ -48,6 +48,8 @@
 
     console.log(amount); // 215.9784
     console.log(amount.toFixed(2)); // "215.98"
+    console.log(Math.round(amount)); //round to nearest integer "216"
+    console.log(Math.floor(amount)); // round downward "215"
 ```
 
 * String casting
