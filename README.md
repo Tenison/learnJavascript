@@ -200,9 +200,9 @@ __JavaScript is extremely broad-minded about the number of arguments you pass to
 #### Node JS (Backend) is a JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 
 ### KEY FEATURES OF BOTH
-* __Single Thread__ JS uses only a single Thread to perform task, therefore performs one instruction after another. If an instruction is too big or takes a long time to complete causes JS to behave in a __blocking__ mannar. __Callback__ functions are used to solve JS's __blocking__ nature.
-* __Asynchronous__ JavaScript is a single-threaded programming language which means only one thing can happen at a time. ... That's where asynchronous JavaScript comes into play. Using asynchronous JavaScript (such as callbacks, promises, and async/await), you can perform long network requests without blocking the main thread.
-* __Non Blocking__ JS uses concepts like callbacks to make applications non blocking. Example: when you make an API call to a server in a program, JS passes the function to the event loop(Thread Pool) while performing other functions on the main call stack. This is done with the help of asynchronous JavaScript (such as callbacks, promises, and async/await). When the API call retruns, the results is placed on the event loop(Task Queue) until the main call stack is free. Then the results is run by the main call stack.
+* __Single Thread__ : JS uses only a single Thread to perform task, therefore performs one instruction after another. If an instruction is too big or takes a long time to complete causes JS to behave in a __blocking__ mannar. __Callback__ functions are used to solve JS's __blocking__ nature.
+* __Asynchronous__ : JavaScript by default is a single-threaded programming language which means only one thing can happen at a time. ... That's where asynchronous JavaScript comes into play. Using asynchronous JavaScript (such as callbacks, promises, and async/await), you can perform long network requests without blocking the main thread.
+* __Non Blocking__ : JS uses concepts like callbacks to make applications non blocking. Example: when you make an API call to a server in a program, JS passes the function to the event loop(Thread Pool) while performing other functions on the main call stack. This is done with the help of asynchronous JavaScript (such as callbacks, promises, and async/await). When the API call retruns, the results is placed on the event loop(Task Queue) until the main call stack is free. Then the results is run by the main call stack.
 
 _Callback Example_
 
