@@ -260,16 +260,16 @@ __Things to Know about NODE__
 
 __Gobal Variables/Objects__
 
-__Example : setTimeout, setInterval, __direname, __filename, require, module.__
+__Example : setTimeout, setInterval, direname, filename, require, module.__
 
-** __direname provides absolute path for the directory name of the current module.
-** __filename file name of the current module.
+* __direname provides absolute path for the directory name of the current module.
+* __filename file name of the current module.
 
 ```node
-console.log(__filename);
-// Prints: /Users/mjr/example.js
-console.log(__dirname);
-// Prints: /Users/mjr
+    console.log(__filename);
+    // Prints: /Users/mjr/example.js
+    console.log(__dirname);
+    // Prints: /Users/mjr
 ```
 
 _setTimeout_
