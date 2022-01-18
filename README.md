@@ -248,7 +248,7 @@ _Callback Example_
     <td>No Filesystem</td>
   </tr>
     <tr>
-    <td>CommonJS</td>
+    <td>Node Modules (os, path,)</td>
     <td>ES6 Modules</td>
   </tr>
 </table>
