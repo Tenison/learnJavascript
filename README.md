@@ -257,6 +257,11 @@ _Callback Example_
 __Things to Know about NODE__
 
 ##
+__Commonly used NODE modules__
+**exports
+**os
+**
+##
 
 __Gobal Variables/Objects__
 
