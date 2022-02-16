@@ -192,7 +192,7 @@ __JavaScript is extremely broad-minded about the number of arguments you pass to
 
 
 ### ||||||||||||||||||||||||||||||||||||||||
-### ||||||||||||||||||||||||||||||||||||||||
+
 ## Node JS VS Vanilla JavaScript
 
 #### Vanilla JavaScript (FrontEnd) is used in the browser and helps a developer manipulate the DOM. JS libraries are bundled functions that help us write code easier. Example: jquery
@@ -258,9 +258,10 @@ __Things to Know about NODE__
 
 ##
 __Commonly used NODE modules__
-**exports
-**os
-**
+* exports - exporting node modules/files
+* os - useful methods about system OS and user
+* path - information about different paths. Useful to application 
+* fs - working with files(reading and writing0)
 ##
 
 __Gobal Variables/Objects__
