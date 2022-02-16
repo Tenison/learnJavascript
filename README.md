@@ -258,10 +258,12 @@ __Things to Know about NODE__
 
 ##
 __Commonly used NODE modules__
-* exports - exporting node modules/files
-* os - useful methods about system OS and user
-* path - information about different paths. Useful to application 
-* fs - working with files(reading and writing0)
+```diff
++ exports - exporting node modules/files
+! os - useful methods about system OS and user
+- path - information about different paths.Creating filepaths [Useful to application] 
++ fs - working with files(reading and writing)
+```
 ##
 
 __Gobal Variables/Objects__
