@@ -3,6 +3,7 @@
 ### Truthy and Falsy
 
 * The Following evaluates to False
+* Find more examples in files TruthyFalsy.js
 
 ```javascript
     let emptyString  = ""
