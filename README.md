@@ -3,7 +3,7 @@
 ### Truthy and Falsy
 
 * The Following evaluates to False
-* Find more examples in files TruthyFalsy.js
+* Find more examples in files  __TruthyFalsy.js__
 
 ```javascript
     let emptyString  = ""
@@ -73,7 +73,7 @@
 ```
 
 * Strings
-* More strings examples in String.js
+* More strings examples in __String.js__
 
 ```javascript
     const value = 12345
