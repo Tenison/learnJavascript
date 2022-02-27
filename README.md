@@ -72,7 +72,8 @@
     onsole.log(Math.ceil(amount)); // round upward "215"
 ```
 
-* String casting
+* Strings
+* More strings examples in String.js
 
 ```javascript
     const value = 12345
