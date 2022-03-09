@@ -208,12 +208,71 @@ __JavaScript is extremely broad-minded about the number of arguments you pass to
 * __Non Blocking__ : JS uses concepts like callbacks to make applications non blocking. Example: when you make an API call to a server in a program, JS passes the function to the event loop(Thread Pool) while performing other functions on the main call stack. This is done with the help of asynchronous JavaScript (such as callbacks, promises, and async/await). When the API call retruns, the results is placed on the event loop(Task Queue) until the main call stack is free. Then the results is run by the main call stack.
 
 _Callback Example_
+* __Callback functions pass in a function as a parameter to another function in order to control the flow of action
+* __Callback function then has to be implememted, depending on what you want to achieve
 
 ``` javascript
-    function doThisThing(theseArgs) {
-        setTimeout(function (theseArgs) { doThatOtherThing(theseArgs); }, 1000);
-        alert('hello world');
+    //STRUCTURE
+    function examplefunction(variable1, variable2 , callback) {
+        //do something with variable1 and variable2 
+
+        //call the callback function.. the last thing to be called
+        callback()
     }
+
+    //implement callback
+    examplefunction(variable1, variable2 , () => {
+        //continue HERE after ""examplefunction"" has finished runing!!!
+    })
+```
+
+``` javascript
+    //Example One 
+    function examplefunctionOne(callback) {
+        //do something 
+        console.log("Hello")
+
+        callback()
+    }
+
+    //callback function implementation 
+    //examplefunctionOne(callback), 'callback' is the callback function
+    examplefunctionOne(() =>{
+        console.log("My name is Osei")
+    })
+
+    /////////////////////////////////////
+    //Example Two 
+    //ONLY through docs will you know the callback requires a variable
+    function examplefunctionTwo(variable, callback) {
+        //do something with ""variable"" and then call callback unction
+        //""variable is optional
+        let alwaysAdd = 5
+        total = variable + alwaysAdd
+
+        callback(total)
+    }
+
+    //callback function implementation 
+    //examplefunctionTwo(callback), 'callback' is the callback function
+    examplefunctionTwo(4, (input) =>{
+        console.log(`The sum total is : ${input}`)
+    })
+```
+
+* __Example: I want funcOne to run only after funcTwo has returned the sum if two numbers
+
+``` javascript
+    function funcOne(arg) {
+        console.log(`the result of the sum is ${arg}`)
+    }
+
+    function funcTwo(firstNumber, secondNumber, callback){
+        //callback function 
+        callback(firstNumber + secondNumber)
+    }
+
+    funcTwo(10, 40, funcOne)
 ```
 
 ### Event Loop
