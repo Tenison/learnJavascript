@@ -260,7 +260,7 @@ _Callback Example_
     })
 ```
 
-* __Example: I want funcOne to run only after funcTwo has returned the sum if two numbers
+* Example: I want funcOne to run only after funcTwo has returned the sum if two numbers
 
 ``` javascript
     function funcOne(arg) {
