@@ -1,0 +1,17 @@
+<script>
+    //Ajax exist in frontend JS
+    //FOR DOM manipulation
+
+    //inspect with browser and developer tools
+
+    const xhr = new XMLHttpRequest()
+
+    //open a resquest to an endpoint
+    xhr.open('GET', 'https://storage.cloud.google.com/ajax-storage-bucket/ajaxTestFiles.txt?authuser=1', true)
+
+    xhr.onload = function() {
+        console.log(this.response)
+    }
+
+    xhr.send()
+</script>
