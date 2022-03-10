@@ -241,7 +241,7 @@ _Callback Example_
         console.log("My name is Osei")
     })
 
-    /////////////////////////////////////
+    //-------------------------------------------------------------------------
     //Example Two 
     //ONLY through docs will you know the callback requires a variable
     function examplefunctionTwo(variable, callback) {
