@@ -1,13 +1,17 @@
 const {createServer} = require('http')
 
-const server = createServer((received, back) =>{ //received = resquest to server || back = response from server
+console.log("Server Started")
+
+const server = createServer((received, back) =>{ //received = resquest to server || back = response from server 
     if(received.url === '/'){
-        back.write(`<h4>Home Page </h4>`)
-        back.end()
+        back.write(`This is the Home Page`)
+    }else if(received.url === '/about'){
+        back.write(`This is the about Page`)
+    }else{
+        //default method  for 404 
+    back.write(`404, Page does not exist`)
     }
-    
-    //default method  for 404 
-    back.write(`<h4> 404, Page does not exist </h4>`)
+
     back.end()
 })
 

@@ -8,6 +8,9 @@ const {createServer} = require('http')
 const server = createServer((send, back) =>{ //send = request and back = response
     back.write("Hii web")
     back.end()
+
+    //or
+    back.end("Hii web")
 })
 
 
