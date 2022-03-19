@@ -241,7 +241,7 @@ _Callback Example_
         console.log("My name is Osei")
     })
 
-    /////////////////////////////////////
+    //-------------------------------------------------------------------------
     //Example Two 
     //ONLY through docs will you know the callback requires a variable
     function examplefunctionTwo(variable, callback) {
@@ -421,3 +421,9 @@ _file2.js_
     console.log(`Hey!, Good ${holdImports.timeOfDay}`)
     console.log(holdImports.greet("Tenison"))
 ```
+
+### node Modules
+__Examples: fs module, os  module, path  module, process  module__
+
+__http module is used building servers with node__
+* __Examples can be found in httpExplain.js, httpFirstTest.js__
