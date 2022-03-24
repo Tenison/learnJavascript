@@ -5,7 +5,7 @@ const {createServer} = require('http')
 
 
 //createServer start a new webserver and returns an object
-const server = createServer((send, back) =>{ //send = request and back = response
+const server = createServer((received, back) =>{ //received = request and back = response
     back.write("Hii web")
     back.end()
 
