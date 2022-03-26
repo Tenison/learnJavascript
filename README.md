@@ -108,9 +108,91 @@
     let age  = prompt("Pleae enter your age : ")
 ```
 ##
-### Accessing Object properties
+### Array Basics
+* The first thing to know is how to create a new array!!!
+* Creating a __new empty Array__
 
 ```javascript
+    let firstArr = []
+    //OR
+    let firstArr = new Array()
+```
+* We can also create arrays initialized with values
+
+```javascript
+    let names = [Paul, Yaw, Alex, Fred]
+```
+* __Length__ of an Array
+
+```javascript
+    let names = [Paul, Yaw, Alex, Fred]
+    console.log(names.length)
+```
+
+* Checking if something is an Array
+
+```javascript
+    let names = [Paul, Yaw, Alex, Fred]
+    Array.isArray(names)
+    // => true
+```
+
+* Adding elements or items to Arrays using __push, splice, unshift_
+
+```javascript
+    /* Using push */
+    //push adds to the _end_ of the array
+    let names = []
+    names.push('Paul', 'Yaw', 'Alex', 'Fred')
+    console.log(names) //['Paul', 'Yaw', 'Alex', 'Fred']
+    
+    //Adding items to array of animal names
+    let animals = ['pigs', 'goats', 'sheep']
+    animals.push('cows') 
+    console.log(animals) //['pigs', 'goats', 'sheep', 'cows']
+    
+    /* Using unshift */
+    //unshift adds to the _beginning_ of the array.
+    let animals = ['pigs', 'goats', 'sheep']
+    animals.unshift('cows', 'cats') 
+    console.log(animals) //['cows', 'cats', 'pigs', 'goats', 'sheep']
+    
+    /* Using splice */
+    //splice can be used to insert in-place into an array
+    //splice(starting array index, number of items/element to replace, items/element to insert into array)
+    //Examples below
+    let fruits = ["Banana", "Orange", "Apple", "Mango"]
+    fruits.splice(2, 0, "Lemon", "Kiwi")
+    //At index 2, and add two elements:
+    console.log(fruits) //['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
+    
+    let names = ['Paul', 'Yaw', 'Alex', 'Fred']
+    names.splice(2, 1, 'Jill')
+    //Remove element at index 2, and then add an element: 
+    console.log(names) //['Paul', 'Yaw', 'Jill', 'Fred']
+    
+    let animals = ['cows', 'cats', 'oats', 'sheep']
+    fruits.splice(2, 1, 'pigs', 'dogs');
+    //Remove element at index 2, and then add two elements:
+    console.log(animals) //['cows', 'cats', 'pigs', 'dogs', 'sheep']
+    
+    let animals = ['cows', 'cats', 'oats', 'sheep']
+    fruits.splice(2, 2, 'pigs', 'dogs');
+    //Remove two elements starting at index 2, and then add two elements:
+    console.log(animals) //['cows', 'cats', 'pigs', 'dogs']
+```
+
+* Removing elements or items from Arrays using __pop, splice, shift_
+
+```javascript
+
+```
+
+##
+### Creating and Accessing Object properties
+
+```javascript
+    //Simple Object
     obj = {
         Name : "Osei",
         Age : 5
@@ -184,7 +266,7 @@ _Arrow function with no parenthesis_
 _Arrow function with default values_
 
 ```javascript
-    const multiply = (a = 2, b = 3, c = 1) => a * b * c;
+    const multiply = (a = 2, b = 3, c = 1) => a * b * c
 
     multiply(2, 2, 2); // 8, calculation = 2*2*2
     multiply(2, 2);    // 4, calculation = 2*2*1
@@ -335,9 +417,9 @@ __Example : setTimeout, setInterval, direname, filename, require, module.__
 * __filename file name of the current module.
 
 ```node
-    console.log(__filename);
+    console.log(__filename)
     // Prints: /Users/mjr/example.js
-    console.log(__dirname);
+    console.log(__dirname)
     // Prints: /Users/mjr
 ```
 
@@ -346,7 +428,7 @@ _setTimeout_
 ```node
     //Say Hello after three seconds
     function sayHi() {
-      alert('Hello');
+      alert('Hello')
     }
 
     setTimeout(sayHi, 3000);
@@ -357,10 +439,10 @@ _setInterval_
     //shows the message every 2 seconds. After 5 seconds, the output is stopped
 
     // repeat with the interval of 2 seconds
-    let timerId = setInterval(() => alert('tick'), 2000);
+    let timerId = setInterval(() => alert('tick'), 2000)
 
     // after 5 seconds stop
-    setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+    setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000)
 ```
 
 __Node Export module using common.js__
