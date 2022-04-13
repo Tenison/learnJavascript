@@ -1,4 +1,6 @@
 # learnJavascript
+## Topics Covered so far
+Remember to add [Coming soon] !! comment to remind me.
 
 ### Truthy and Falsy
 
@@ -368,7 +370,7 @@ _Callback Example_
 * __Rest API__ 
 
 
-## Node JS VS Vanilla JavaScript
+### Node JS VS Vanilla JavaScript
 
 <table>
   <tr>
@@ -509,3 +511,6 @@ __Examples: fs module, os  module, path  module, process  module__
 
 __http module is used building servers with node__
 * __Examples can be found in httpExplain.js, httpFirstTest.js__
+
+### JavaScript Async Patterns
+* __Callbacks, Promises, Async Await__
