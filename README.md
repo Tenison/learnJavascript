@@ -209,8 +209,46 @@ Remember to add [Coming soon] !! comment to remind me.
 ```
 
 ##
-### conditions
+### conditions (Switch and If)
+* __switch statments__
 
+* Switch statments are used when a single variable needs to be compared to multiple variants. This is done using strict equality (===).
+* The default case is optional
+
+  ```javascript
+    switch (x) {
+      case one:
+        // code that is executed when "x === one"
+        break;
+      case two:
+        // code that is executed when "x === two"
+        break;
+      default:
+        // code that is executed when x does not equal any of the options above
+        // default case is optional
+    }
+  ```
+
+* Managing scope within cases using {}. this limits scope variables within cases
+
+  ```javascript
+    switch (x) {
+      case option1: {
+        // Variables declared here are contained to this case.
+        let mes= "start One"
+        break;
+      }
+      case option2: {
+        // Variables declared here are contained to this case.
+        let mes= "start Two"
+        break;
+      }
+      default: {
+        // ...
+      }
+    }
+  ```
+###
 * __if else statments__
 
 ##
