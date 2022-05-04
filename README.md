@@ -545,10 +545,15 @@ _file2.js_
 ```
 
 ### node Modules
-__Examples: fs module, os  module, path  module, process  module__
+The fundamentals of modules in node are simple. Basically __any file you create__ in a node project is a module.
+* Example main.js - This file if created within a node project is a module.
 
-__http module is used building servers with node__
-* __Examples can be found in httpExplain.js, httpFirstTest.js__
+__Please Note:__ node has inbuilt modules as part of the node framework by default.[Written by the node team to make node more powerful].
+__Examples: http module, fs module, os  module, path  module, process  module__
+
+Writing some examples with the __http module__
+http module is used building servers with node
+* Examples can be found in httpExplain.js, httpFirstTest.js
 
 ### JavaScript Async Patterns
 * __Callbacks, Promises, Async Await__
