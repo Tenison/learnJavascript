@@ -1,19 +1,38 @@
-//write call function here
+//OUTPUTS
+//watch sequence of callbacks 
+console.log("ONE");
 
-const callbackExample = (input, callback) =>{
+callbackExample("My nameis osei", (value) =>{
+    console.log(value);
+    //watch sequence 
+    console.log("TWO");
+
+    funcTwo(10, 40, (input)=>{
+        funcOne(input)
+    })
+
+    //watch sequence 
+    console.log("THREE");
+})
+
+
+
+
+//--------------------------------------------------
+
+
+/////// Callback examples ONE
+function callbackExample (input, callback){
     ///just an example of an action 
     let temp = input
 
     //callback here.. basically a function that runs in another function without specifing theinput during creation
-    callback(temp);
+    callback(input);
 }
-
-callbackExample("My nameis osei", (input) =>{
-    console.log(input);
-})
+/////// ends here
 
 
-/////// Callback examples 
+/////// Callback examples TWO
 function funcOne(arg) {
     console.log(`the result of the sum is ${arg}`)
 }
@@ -21,22 +40,6 @@ function funcOne(arg) {
 function funcTwo(firstNumber, secondNumber, callback){
     callback(firstNumber + secondNumber)
 }
+/////// ends here
 
-funcTwo(10, 40, funcOne)
 
-
-//--------------------------------------------------
-
-// function
-function greet(name, callback) {
-    console.log('Hi' + ' ' + name);
-    callback();
-}
-
-// callback function
-function callMe() {
-    console.log('I am callback function');
-}
-
-// passing function as an argument
-greet('Peter', callMe);
