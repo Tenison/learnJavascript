@@ -7,7 +7,7 @@
 let exmp = new Promise((resolve, reject) =>{
     //some logic
     //logic can either result in a success or error
-    //if success call resolve() || if error or failure call reject()
+    //if successful, call resolve() || if error or failure call reject()
     let logic = true
     if(logic)
         resolve()
@@ -27,10 +27,29 @@ exmp.then(
     }
 )
 
-//Example 2
+//Example 2 : Better syntex and passing value through resolve function
+//simple example
+let exmp2 = new Promise((resolve, reject) => {
+    //do some addition
+    let someSentence = "Hey there"
+
+    //intentional error
+    //foo()
+
+    resolve(someSentence)
+})
+
+exmp2.then((message) =>{
+    console.log(message + ", Osei")
+},
+(err) =>{
+    console.log(err)
+})
+
+//Example 3
 //
 //let exmp2 = new Promise(promise <=> function)
-let exmp2 = new Promise((resolve, reject) =>{
+let exmp3 = new Promise((resolve, reject) =>{
     //some logic
     console.log("-----------------------------------")
 
@@ -42,8 +61,8 @@ let exmp2 = new Promise((resolve, reject) =>{
     resolve()
 })
 
-//exmp2.then(function <=> resolve event , function <=> rehect event)
-exmp2.then(
+//exmp2.then(function <=> resolve event , function <=> reject event)
+exmp3.then(
     //control of flow using jobs(js job)
     ()=>{
         console.log("Promise success, do something after success!!!")
