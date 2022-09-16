@@ -71,3 +71,51 @@ exmp3.then(
         console.log("Error :" + error)
     }
 )
+
+
+//Promise.resolve()
+//Promise.resolve creates a new promise without "new Promise and then" syntex. But acts in the same way
+//You can pass a promise or non-promise. Promise.resolve will unwap till it reaches a value that can be extracted to make a new promise. 
+//if you pass a non-Promise thenable value to Promise.resolve(..) , it will attempt to unwrap that
+//value, and the unwrapping will keep going until a concrete final non-Promise-like value is extracted
+/*
+**Promise.resolve(..) will accept any thenable, and will unwrap it to its non-thenable value. But you get back from
+Promise.resolve(..) a real, genuine Promise in its place, one that you can trust. If what you passed in is already a
+genuine Promise, you just get it right back, so there's no downside at all to filtering through Promise.resolve(..) to gain
+trust.**
+*/
+
+//Syntex
+Promise.resolve( p )
+.then(
+    function fulfilled(val){},function rejected(err){}
+);
+
+//Example 1
+// p1 and p2 are the same
+var p1 = new Promise( function(resolve,reject){
+    resolve( 42 );
+ } );
+
+var p2 = Promise.resolve( 42 );
+
+//Therefore !!!! NOTE
+var p1 = Promise.resolve( 42 );
+var p2 = Promise.resolve( p1 );// Unwarped Promise//until we get a real value, in this case '42'  from p1
+p1 === p2; // true
+
+//Example 2
+//Assume foo() is some function
+
+// don't do this:
+foo( 42 )
+.then( function(v){
+console.log( v );
+} );
+// instead, do this:
+Promise.resolve( foo( 42 ) )
+.then( function(v){
+console.log( v );
+} );
+
+//Example 3
